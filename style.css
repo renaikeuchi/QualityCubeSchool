@@ -132,6 +132,21 @@ nav ul li a:hover {
   background-color: #ffb200;
 }
 
+/* スクールの説明 */
+.school-description {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.school-description h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
 /* お知らせ */
 .news-list {
   list-style: none;
