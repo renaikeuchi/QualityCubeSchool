@@ -200,24 +200,24 @@ nav ul li a:hover {
 
 /* 受講者向けリンクボックス */
 .index_target_box {
-  width: 35%; /* 幅を60%に変更 */
-  max-width: 1200px; /* 最大幅を設定して、大きすぎないようにする */
-  margin: 40px auto; /* 上下に40pxの間隔を空けて中央揃え */
+  width: 35%;
+  max-width: 1200px;
+  margin: 40px auto;
   padding: 40px;
-  background-color: #ffffff; /* 白い背景 */
-  border-radius: 10px; /* ボックスの角を丸く */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ボックスに影を追加 */
-  border: 1px solid #ccc; /* ボックスの枠線 */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
 }
 
 .index_target_box h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
   text-align: center;
-  padding: 20px; /* ヘッダー部分にパディング */
-  background-color: #1e90ff; /* ヘッダーの背景色を青に変更 */
-  color: #fff; /* テキストカラーを白に変更 */
-  border-radius: 8px; /* ヘッダー部分の角を丸く */
+  padding: 20px;
+  background-color: #1e90ff;
+  color: #fff;
+  border-radius: 8px;
 }
 
 .index_target_box ul {
