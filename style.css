@@ -945,44 +945,490 @@ textarea {
   margin-top: 10px; /* 少し余白を追加 */
 }
 
-.management-detail {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+/* コース全体を中央に配置 */
+.course-management {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.management-detail h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.course-management h2 {
+  font-size: 36px; /* フォントサイズを大きく */
+  color: #0072bc;
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 40px; /* 下にスペースを追加 */
+  font-weight: bold; /* 太字に */
 }
 
-.management-detail p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
+/* テーマと画像を横並びにする */
+.course-management h3 {
+  font-size: 22px;
+  color: #0072bc;
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 30px; /* h3の下に間隔を追加 */
+  margin-right: 20px; /* テキストと画像の間に余白を追加 */
+
 }
 
-.management-detail ul {
-  list-style: none;
-  margin: 20px 0;
+.course-management ul {
+  list-style: none; /* リストのデフォルトスタイルを解除 */
+  padding: 0; /* 内側の余白をリセット */
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
 }
 
-.management-detail ul li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+.course-management .theme{
+  display: inline-block; /*画像を横並びにする */
+  
 }
 
-.management-detail button.start-management-btn {
-  background-color: #1e90ff;
-  color: white;
-  font-size: 1.2rem;
-  padding: 12px 25px;
+/* 画像とテキスト間のスペース調整 */
+.course-management .target {
+  display: inline-block;
+  margin-bottom: 30px; /* 画像の下に間隔を追加 */
+}
+
+/* 横並びにするためのスタイル */
+.management-description {
+  display: flex; /* 横並びにする */
+  align-items: flex-start; /* 垂直方向で上揃え */
+  gap: 30px; /* テキストと画像の間にスペース */
+  margin-bottom: 40px; /* セクション間の間隔 */
+
+}
+  .management-description {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 垂直方向に中央揃え */
+    justify-content: center; /* 水平方向に中央揃え */
+    gap: 30px; /* テキストと画像の間にスペース */
+    text-align: center; /* テキストを中央揃え */
+  }
+  
+
+/* p要素のスタイル */
+.management-description p {
+  font-size: 16px;
+  color: #555;
+  margin: 0; /* 余白をリセット */
+  max-width: 70%; /* p要素の幅を調整 */
+  line-height: 1.6; /* 行間を調整 */
+}
+
+/* ulと画像のスタイル */
+.management-description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* リストのスタイルを解除 */
+}
+
+/* 画像のスタイル調整 */
+.management-description .managementdetail {
+  width: 250px; /* 画像の幅を大きく調整 */
+  height: auto; /* 高さを自動調整 */
+  margin-bottom: 20px; /* 画像の下に間隔を追加 */
+}
+
+button.start-management-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #0072bc;
+  color: #fff;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
 }
 
-.management-detail button.start-management-btn:hover {
-  background-color: #ffcc00;
+button.start-management-btn:hover {
+  background-color: #005fa3;
+}
+
+/* 画像とh3見出しの間隔を調整 */
+.course-management .purpose {
+
+  max-width: 650px; /* 最大幅を800pxに設定 */
+  height: auto; /* 高さは自動調整 */
+  display: block; /* 画像をブロック要素にして余白を調整 */
+  margin: 20px auto; /* 上下の余白を追加して中央揃え */
+}
+
+/* 画像のスタイル調整 */
+.management-curriculumpng {
+  max-width: 100%; /* 最大幅を100%に設定して親要素に合わせる */
+  height: auto; /* 高さは自動調整 */
+  display: block; /* 画像をブロック要素にする */
+  margin: 0 auto; /* 中央揃え */
+}
+
+.course-management .managementcurriculum {
+  font-size: 36px; /* 見出しのフォントサイズを大きく */
+  text-align: center; /* 見出しを中央揃え */
+  color: #0072bc; /* 見出しの色を設定 */
+  font-weight: bold; /* 見出しを太字に */
+  margin: 40px 0; /* 見出しの上下に余白を追加 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
+  width: 100%; /* 幅を100%にして中央に配置 */
+}
+
+.course-management .management-curriculumpng {
+  margin: 40px auto; /* 上下にスペース、中央揃え */
+}
+
+.course-management .management-review {
+  display: inline-block; /* 画像をインラインブロックとして表示 */
+  max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+  height: auto; /* 高さを自動調整 */
+}
+
+/* コース全体を中央に配置 */
+.course-skill {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.course-skill h2 {
+  font-size: 36px; /* フォントサイズを大きく */
+  color: #0072bc;
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 40px; /* 下にスペースを追加 */
+  font-weight: bold; /* 太字に */
+}
+
+/* テーマと画像を横並びにする */
+.course-skill h3 {
+  font-size: 22px;
+  color: #0072bc;
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 30px; /* h3の下に間隔を追加 */
+  margin-right: 20px; /* テキストと画像の間に余白を追加 */
+}
+
+.course-skill ul {
+  list-style: none; /* リストのデフォルトスタイルを解除 */
+  padding: 0; /* 内側の余白をリセット */
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+}
+
+.course-skill .theme {
+  display: inline-block; /*画像を横並びにする */
+}
+
+/* 画像とテキスト間のスペース調整 */
+.course-skill .target {
+  display: inline-block;
+  margin-bottom: 30px; /* 画像の下に間隔を追加 */
+}
+
+/* 横並びにするためのスタイル */
+.skill-description {
+  display: flex; /* 横並びにする */
+  align-items: flex-start; /* 垂直方向で上揃え */
+  gap: 30px; /* テキストと画像の間にスペース */
+  margin-bottom: 40px; /* セクション間の間隔 */
+}
+.skill-description {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 垂直方向に中央揃え */
+  justify-content: center; /* 水平方向に中央揃え */
+  gap: 30px; /* テキストと画像の間にスペース */
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* p要素のスタイル */
+.skill-description p {
+  font-size: 16px;
+  color: #555;
+  margin: 0; /* 余白をリセット */
+  max-width: 70%; /* p要素の幅を調整 */
+  line-height: 1.6; /* 行間を調整 */
+}
+
+/* ulと画像のスタイル */
+.skill-description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* リストのスタイルを解除 */
+}
+
+/* 画像のスタイル調整 */
+.skill-description .skilldetail {
+  width: 250px; /* 画像の幅を大きく調整 */
+  height: auto; /* 高さを自動調整 */
+  margin-bottom: 20px; /* 画像の下に間隔を追加 */
+}
+
+button.start-skill-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #0072bc;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+button.start-skill-btn:hover {
+  background-color: #005fa3;
+}
+
+/* 画像とh3見出しの間隔を調整 */
+.course-skill .purpose {
+  max-width: 650px; /* 最大幅を800pxに設定 */
+  height: auto; /* 高さは自動調整 */
+  display: block; /* 画像をブロック要素にして余白を調整 */
+  margin: 20px auto; /* 上下の余白を追加して中央揃え */
+}
+
+/* 画像のスタイル調整 */
+.skill-curriculumpng {
+  max-width: 100%; /* 最大幅を100%に設定して親要素に合わせる */
+  height: auto; /* 高さは自動調整 */
+  display: block; /* 画像をブロック要素にする */
+  margin: 0 auto; /* 中央揃え */
+}
+
+.course-skill .skillcurriculum {
+  font-size: 36px; /* 見出しのフォントサイズを大きく */
+  text-align: center; /* 見出しを中央揃え */
+  color: #0072bc; /* 見出しの色を設定 */
+  font-weight: bold; /* 見出しを太字に */
+  margin: 40px 0; /* 見出しの上下に余白を追加 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
+  width: 100%; /* 幅を100%にして中央に配置 */
+}
+
+.course-skill .skill-curriculumpng {
+  margin: 40px auto; /* 上下にスペース、中央揃え */
+}
+
+.course-skill .skill-review {
+  display: inline-block; /* 画像をインラインブロックとして表示 */
+  max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+  height: auto; /* 高さを自動調整 */
+}
+
+/* コース全体を中央に配置 */
+.course-dx {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.course-dx h2 {
+  font-size: 36px; /* フォントサイズを大きく */
+  color: #0072bc;
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 40px; /* 下にスペースを追加 */
+  font-weight: bold; /* 太字に */
+}
+
+/* テーマと画像を横並びにする */
+.course-dx h3 {
+  font-size: 22px;
+  color: #0072bc;
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 30px; /* h3の下に間隔を追加 */
+  margin-right: 20px; /* テキストと画像の間に余白を追加 */
+}
+
+.course-dx ul {
+  list-style: none; /* リストのデフォルトスタイルを解除 */
+  padding: 0; /* 内側の余白をリセット */
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+}
+
+.course-dx .theme {
+  display: inline-block; /*画像を横並びにする */
+}
+
+/* 画像とテキスト間のスペース調整 */
+.course-dx .target {
+  display: inline-block;
+  margin-bottom: 30px; /* 画像の下に間隔を追加 */
+}
+
+/* 横並びにするためのスタイル */
+.dx-description {
+  display: flex; /* 横並びにする */
+  align-items: flex-start; /* 垂直方向で上揃え */
+  gap: 30px; /* テキストと画像の間にスペース */
+  margin-bottom: 40px; /* セクション間の間隔 */
+}
+.dx-description {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 垂直方向に中央揃え */
+  justify-content: center; /* 水平方向に中央揃え */
+  gap: 30px; /* テキストと画像の間にスペース */
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* p要素のスタイル */
+.dx-description p {
+  font-size: 16px;
+  color: #555;
+  margin: 0; /* 余白をリセット */
+  max-width: 70%; /* p要素の幅を調整 */
+  line-height: 1.6; /* 行間を調整 */
+}
+
+/* ulと画像のスタイル */
+.dx-description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* リストのスタイルを解除 */
+}
+
+/* 画像のスタイル調整 */
+.dx-description .dxdetail {
+  width: 250px; /* 画像の幅を大きく調整 */
+  height: auto; /* 高さを自動調整 */
+  margin-bottom: 20px; /* 画像の下に間隔を追加 */
+}
+
+button.start-dx-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #0072bc;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+button.start-dx-btn:hover {
+  background-color: #005fa3;
+}
+
+/* 画像とh3見出しの間隔を調整 */
+.course-dx .purpose {
+  max-width: 650px; /* 最大幅を800pxに設定 */
+  height: auto; /* 高さは自動調整 */
+  display: block; /* 画像をブロック要素にして余白を調整 */
+  margin: 20px auto; /* 上下の余白を追加して中央揃え */
+}
+
+/* 画像のスタイル調整 */
+.dx-curriculumpng {
+  max-width: 100%; /* 最大幅を100%に設定して親要素に合わせる */
+  height: auto; /* 高さは自動調整 */
+  display: block; /* 画像をブロック要素にする */
+  margin: 0 auto; /* 中央揃え */
+}
+
+.course-dx .dxcurriculum {
+  font-size: 36px; /* 見出しのフォントサイズを大きく */
+  text-align: center; /* 見出しを中央揃え */
+  color: #0072bc; /* 見出しの色を設定 */
+  font-weight: bold; /* 見出しを太字に */
+  margin: 40px 0; /* 見出しの上下に余白を追加 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
+  width: 100%; /* 幅を100%にして中央に配置 */
+}
+
+.course-dx .dx-curriculumpng {
+  margin: 40px auto; /* 上下にスペース、中央揃え */
+}
+
+
+/* ダウンロードセクション */
+
+.download-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1500px;
+  margin-bottom: 60px; /* フッターとの間隔を広げるために下に余白を追加 */
+}
+
+/* ダウンロードセクションの見出し */
+.download-section h2 {
+  font-size: 3rem;  /* 見出しを大きく */
+  margin-bottom: 30px;  /* 下の余白を30pxに設定 */
+  color: #333333; /* 見出しの色を少し濃くして強調 */
+}
+
+/* ダウンロードセクションの説明文 */
+.download-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;  /* 見出しと説明文の間隔を開ける */
+}
+
+/* ダウンロードリスト */
+.download-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px; /* アイテム間の隙間を40pxに設定 */
+  margin-top: 40px; /* ダウンロードリストとヘッダーの間隔を広げる */
+}
+
+/* ダウンロードアイテム */
+.download-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 30%;  /* 各アイテムの幅を均等に 3つ並べるために30% */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px; /* アイテムの間隔を広げるために下部にマージンを追加 */
+}
+
+.download-item img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.download-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.download-item p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.download-btn:hover {
+  background-color: #1c7ed6;
 }
