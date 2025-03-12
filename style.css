@@ -970,7 +970,6 @@ textarea {
   text-align: center; /* テキストを中央揃え */
   margin-bottom: 30px; /* h3の下に間隔を追加 */
   margin-right: 20px; /* テキストと画像の間に余白を追加 */
-
 }
 
 .course-management ul {
@@ -981,15 +980,17 @@ textarea {
   align-items: center; /* 垂直方向に中央揃え */
 }
 
-.course-management .theme{
-  display: inline-block; /*画像を横並びにする */
-  
-}
+.course-management .theme {
+  margin: 0 auto; /* 画像に中央揃えを指定 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
+ }
 
 /* 画像とテキスト間のスペース調整 */
 .course-management .target {
   display: inline-block;
   margin-bottom: 30px; /* 画像の下に間隔を追加 */
+  margin: 0 auto; /* 画像に中央揃えを指定 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
 }
 
 /* 横並びにするためのスタイル */
@@ -998,16 +999,14 @@ textarea {
   align-items: flex-start; /* 垂直方向で上揃え */
   gap: 30px; /* テキストと画像の間にスペース */
   margin-bottom: 40px; /* セクション間の間隔 */
-
 }
-  .management-description {
-    display: flex; /* 横並びにする */
-    align-items: center; /* 垂直方向に中央揃え */
-    justify-content: center; /* 水平方向に中央揃え */
-    gap: 30px; /* テキストと画像の間にスペース */
-    text-align: center; /* テキストを中央揃え */
-  }
-  
+.management-description {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 垂直方向に中央揃え */
+  justify-content: center; /* 水平方向に中央揃え */
+  gap: 30px; /* テキストと画像の間にスペース */
+  text-align: center; /* テキストを中央揃え */
+}
 
 /* p要素のスタイル */
 .management-description p {
@@ -1052,7 +1051,6 @@ button.start-management-btn:hover {
 
 /* 画像とh3見出しの間隔を調整 */
 .course-management .purpose {
-
   max-width: 650px; /* 最大幅を800pxに設定 */
   height: auto; /* 高さは自動調整 */
   display: block; /* 画像をブロック要素にして余白を調整 */
@@ -1082,9 +1080,15 @@ button.start-management-btn:hover {
 }
 
 .course-management .management-review {
-  display: inline-block; /* 画像をインラインブロックとして表示 */
-  max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+  margin: 0 auto; /* 画像に中央揃えを指定 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
+  max-width: 100%; /* 画像の最大幅を100%にして親要素に合わせる */
   height: auto; /* 高さを自動調整 */
+}
+
+.course-image {
+  text-align: center; /* 親要素に中央揃えを指定 */
+  margin-bottom: 20px; /* 画像下に余白 */
 }
 
 /* コース全体を中央に配置 */
@@ -1123,13 +1127,15 @@ button.start-management-btn:hover {
 }
 
 .course-skill .theme {
-  display: inline-block; /*画像を横並びにする */
+  margin: 0 auto; /* 画像に中央揃えを指定 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
 }
 
 /* 画像とテキスト間のスペース調整 */
-.course-skill .target {
-  display: inline-block;
+.course-skill .target {;
   margin-bottom: 30px; /* 画像の下に間隔を追加 */
+  margin: 0 auto; /* 画像に中央揃えを指定 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
 }
 
 /* 横並びにするためのスタイル */
@@ -1221,6 +1227,18 @@ button.start-skill-btn:hover {
 .course-skill .skill-review {
   display: inline-block; /* 画像をインラインブロックとして表示 */
   max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+  height: auto; /* 高さを自動調整 */
+}
+
+.course-image {
+  text-align: center; /* 親要素に中央揃えを指定 */
+  margin-bottom: 20px; /* 画像下に余白 */
+}
+
+.course-image .skill-review {
+  margin: 0 auto; /* 画像に中央揃えを指定 */
+  display: block; /* ブロック要素にして中央揃えを確実にする */
+  max-width: 100%; /* 画像の最大幅を100%にして親要素に合わせる */
   height: auto; /* 高さを自動調整 */
 }
 
@@ -1353,6 +1371,12 @@ button.start-dx-btn:hover {
 
 .course-dx .dx-curriculumpng {
   margin: 40px auto; /* 上下にスペース、中央揃え */
+}
+
+.course-dx .dx-review {
+  display: inline-block; /* 画像をインラインブロックとして表示 */
+  max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+  height: auto; /* 高さを自動調整 */
 }
 
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ヒューマンエラー |【QA】e-learning</title>
+    <title>技能・技術 |【QA】e-learning</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -15,8 +15,11 @@
         <nav>
           <ul>
             <li><a href="index.html">トップ</a></li>
-            <li><a href="instructor.html">講師紹介</a></li>
             <li><a href="course.html">コース一覧</a></li>
+            <li><a href="instructor.html">講師紹介</a></li>
+            <li class="dropdown">
+              <a href="Material-download.html">教材ダウンロード</a>
+            </li>
             <li class="dropdown">
               <a href="#">お問い合わせ・FAQ</a>
               <ul class="dropdown-content">
@@ -32,43 +35,62 @@
     <!-- メインコンテンツ -->
     <main>
       <section class="course-skill">
-        <h2>ヒューマンエラー コース概要</h2>
+        <h2>ヒューマンエラー防止のための要因分析 コース概要</h2>
 
+        <!-- テーマ -->
         <h3>テーマ</h3>
-        <ul>
-          <img src="img/skill-theme.png" class="theme" />
-        </ul>
+          <ul>
+            <img src="img/skill-theme.png" alt="テーマ画像" class="theme" />
+          </ul>
+        </br>
 
-        <br />
+        <!-- 対象者 -->
         <h3>対象者</h3>
 
-        <ul>
-          <img src="img/skill-target.png" class="target" />
-        </ul>
-        <div class="skill-description">
-          <p>
-            ヒューマンエラーを撲滅するために、エラーの要因を分析できる能力を習得する<br />
-            コースです。さまざまな事例をアニメーションによるわかりやすい説明とともに検<br />
-            証し、生じたエラーの要因、エラーを生みやすい要因についての分析力を身につ<br />
-            けます。ヒューマンエラー防止の基礎体力を養うことができます。
-          </p>
           <ul>
-            <img src="img/skilldetail.png" class="skilldetail" />
+            <img src="img/skill-target.png" alt="対象者画像" class="target" />
           </ul>
         </div>
 
-        <br />
-        <h3 class="skillcurriculum">ヒューマンエラーコースのカリキュラム</h3>
-        <img src="img/skill-curriculum.png" class="skill-curriculumpng" />
+        <!-- コース説明 -->
+        <div class="skill-description">
+          <p>
+            ヒューマンエラー防止のための要因分析を撲滅するために、エラーの要因を分析できる能力を習得する<br />
+            コースです。さまざまな事例をアニメーションによるわかりやすい説明とともに検<br />
+            証し、生じたエラーの要因、エラーを生みやすい要因についての分析力を身につ<br />
+            けます。ヒューマンエラー防止のための要因分析防止の基礎体力を養うことができます。
+          </p>
+            <img
+              src="img/skilldetail.png"
+              alt="コース詳細画像"
+              class="skilldetail"
+            />
+          </div>
+        </div>
 
-        <ul>
-          <img src="img/skill-purpose.png" class="purpose" />
-        </ul>
+        <!-- カリキュラム -->
+        <h3 class="skillcurriculum">
+          ヒューマンエラー防止のための要因分析のカリキュラム
+        </h3>
+        <div class="course-image">
+          <img
+            src="img/skill-curriculum.png"
+            alt="カリキュラム画像"
+            class="skill-curriculumpng"
+          />
+        </div>
 
-        <ul>
-          <img src="img/skill-review.png" class="skill-review" />
-        </ul>
+        <!-- 目的 -->
+        <div class="course-image">
+          <img src="img/skill-purpose.png" alt="目的画像" class="purpose" />
+        </div>
 
+        <!-- 評価 -->
+        <div class="course-image">
+          <img src="img/skill-review.png" alt="評価画像" class="skill-review" />
+        </div>
+
+        <!-- コース開始ボタン -->
         <button class="start-skill-btn">コースを始める</button>
       </section>
     </main>
