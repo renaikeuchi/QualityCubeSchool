@@ -1,1 +1,1 @@
-# QualityCubeSchool
+# QualityCubeSchool (仮称)
