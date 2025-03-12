@@ -664,3 +664,279 @@ nav ul,
   padding: 0;
   margin: 0;
 }
+
+.contact-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-top: 5px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1e90ff;
+}
+
+.contact-form p {
+  margin-bottom: 20px; /* ボタンと段落の間にスペースを追加 */
+}
+
+.submit-btn {
+  background-color: #27acd9;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* ボタンの上部にもスペースを追加 */
+}
+
+.submit-btn:hover {
+  background-color: #1a8ab7;
+}
+
+/* お問い合わせフォームセクション */
+.contact-form-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  color: #555;
+  display: block; /* ラベルをブロック要素に変更して、左寄せにする */
+  margin-bottom: 5px; /* ラベルと入力フィールドの間隔を少し空ける */
+  float: left; /* 左寄せ */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-top: 5px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1e90ff;
+}
+
+.submit-btn {
+  background-color: #27acd9;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1a8ab7;
+}
+
+/* 会社情報セクション */
+.company-info {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: left; /* テキストを左寄せ */
+}
+
+.company-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.company-info p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.company-info ul {
+  list-style: none;
+  padding: 0;
+  text-align: left; /* リストのテキストを左寄せ */
+  margin: 0; /* マージンの初期化 */
+}
+
+.company-info ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.company-info ul li strong {
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  .contact-form-section h2,
+  .company-info h2 {
+    font-size: 2rem;
+  }
+
+  .company-info ul {
+    padding-left: 20px;
+    text-align: left; /* モバイルでも左寄せ */
+  }
+}
+
+/* FAQセクション */
+.faq-section {
+  margin-top: 40px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.answer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* 講師・運営への質問フォーム */
+.question-form-section {
+  margin-top: 60px;
+  margin-bottom: 60px; /* フォームとフッターの間隔をあけるためのマージン */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-form-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.question-form {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px; /* ボタンの上に少し余白を追加 */
+  display: block; /* ボタンをブロック要素にして中央寄せ */
+  margin-left: auto; /* 左側のマージンを自動設定 */
+  margin-right: auto; /* 右側のマージンを自動設定 */
+}
+
+.submit-btn:hover {
+  background-color: #ffcc00;
+}
+
+.question-form-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.question-form p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px; /* 少し余白を追加 */
+}
