@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - よくある質問</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="header-container">
+        <div class="logo">QualityCubeSchool (仮称)</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="instructor.html">講師紹介</a></li>
+            <li class="dropdown">
+              <a href="#">お問い合わせ・FAQ</a>
+              <ul class="dropdown-content">
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- FAQセクション -->
+      <section class="faq-section">
+        <h2>よくある質問 (FAQ)</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3 class="question">Q1: コースの受講方法はどうなっていますか？</h3>
+            <p class="answer">
+              A1:
+              コースはオンラインで受講できます。ログイン後、受講したいコースを選んで開始してください。
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="question">Q2: 支払い方法はどのようになっていますか？</h3>
+            <p class="answer">
+              A2:
+              支払いはクレジットカード、銀行振込、その他オンライン決済に対応しています。詳細は「支払い方法」のページをご確認ください。
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="question">
+              Q3: コースを途中でキャンセルすることはできますか？
+            </h3>
+            <p class="answer">
+              A3:
+              コースのキャンセルについては、受講規約に基づき、一定の期間内であればキャンセルが可能です。詳細は「キャンセルポリシー」をご確認ください。
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="question">
+              Q4: 講師に質問したい場合はどうすれば良いですか？
+            </h3>
+            <p class="answer">
+              A4: 講師への質問は「講師・運営への質問フォーム」から送信できます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 講師・運営への質問フォーム -->
+      <section class="question-form-section">
+        <h2>講師・運営への質問フォーム</h2>
+        <form action="#" method="POST" class="question-form">
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="例: 山田 太郎"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="例: example@mail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">件名</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="質問内容を簡潔にご記入ください"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">質問内容</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="質問内容をご記入ください"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit-btn">送信</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>会社情報</h4>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>サポート</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>ソーシャルメディア</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Example Inc. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

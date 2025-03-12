@@ -32,6 +32,7 @@ h3 {
   color: #333;
 }
 
+/* <-----------トップ画面-----------------> */
 /* ヘッダー */
 header {
   background-color: #1e90ff;
@@ -542,4 +543,124 @@ a.btn h3 {
   font-size: 14px;
   margin-top: 20px;
   color: #333;
+}
+
+.instructor-card {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff; */
+  padding: 20px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 20px;
+  gap: 20px; /* 画像とテキストの間隔 */
+}
+
+.instructor-photo {
+  width: 100px; /* 画像を小さく */
+  height: 100px;
+  border-radius: 50%; /* 丸くする（任意） */
+  object-fit: cover;
+}
+
+.instructor-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.instructor-list h2 {
+  font-size: 2.5rem; /* フォントサイズを大きく */
+  text-align: center; /* 中央配置 */
+  margin-bottom: 20px; /* 下の余白を少し広げる */
+  margin-top: 40px; /* ヘッダーとの間隔を開ける */
+}
+
+.position {
+  font-weight: bold;
+  margin-left: 10px; /* 適宜調整 */
+  color: #666;
+  text-align: left; /* 左寄せにする */
+}
+
+.bio {
+  font-size: 1rem;
+  color: #333;
+}
+
+.courseslist h2 {
+  font-size: 2.5rem; /* フォントサイズを大きく */
+  text-align: center; /* 中央配置 */
+  margin-bottom: 20px; /* 下の余白を少し広げる */
+  margin-top: 40px; /* ヘッダーとの間隔を開ける */
+}
+
+.courseslist-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categoryitem {
+  text-align: center; /* 中央配置 */
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoryitem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.categoryitem h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.coursebtn {
+  display: block;
+  margin-bottom: 10px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.coursebtn:hover {
+  background-color: #0056b3;
+}
+
+.start-course-btn {
+  padding: 15px 30px;
+  background-color: #27acd9;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-course-btn:hover {
+  background-color: #1a8ab7;
+}
+
+.start-course-btn:hover {
+  background-color: #1a8ab7;
+}
+
+nav ul,
+.footer-section ul,
+.courseslist ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

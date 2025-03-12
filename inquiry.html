@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="header-container">
+        <div class="logo">QualityCubeSchool (仮称)</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="instructor.html">講師紹介</a></li>
+            <li class="dropdown">
+              <a href="inquiry.html">お問い合わせ・FAQ</a>
+              <ul class="dropdown-content">
+                <li><a href="inquiry.html">お問い合わせ</a></li>
+                <li><a href="FQA.html">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+      <section class="contact-form-section">
+        <h2>お問い合わせフォーム</h2>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="例: 山田 太郎"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="例: example@mail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">件名</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="お問い合わせ内容を簡単にご記入ください"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">お問い合わせ内容</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="お知らせや質問内容をご記入ください"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit-btn">送信</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- 会社情報セクション -->
+      <section class="company-info">
+        <h2>会社情報</h2>
+        <p>お問い合わせの前に、以下の情報をご確認ください。</p>
+        <ul>
+          <li><strong>会社名:</strong> QualityCubeSchool</li>
+          <li><strong>所在地:</strong> 東京都千代田区1-1-1</li>
+          <li><strong>電話番号:</strong> 03-1234-5678</li>
+          <li><strong>営業時間:</strong> 月曜日〜金曜日 9:00〜18:00</li>
+          <li>
+            <strong>対応時間:</strong>
+            お問い合わせには2〜3営業日以内に返信いたします。
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>会社情報</h4>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>サポート</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>ソーシャルメディア</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Example Inc. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
