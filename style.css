@@ -501,6 +501,7 @@ a.btn h3 {
   color: #999;
   background: #fff;
   border-top: 1px solid #e5e7eb;
+  margin-top: 100px; /* フッターが常に下に配置される */
 }
 
 .footer-container {
@@ -638,8 +639,9 @@ a.btn h3 {
 }
 
 .start-management-btn {
-  padding: 15px 30px;
-  background-color: #27acd9;
+  width: 1000px; /* 横幅を指定 */
+  padding: 15px 30px; /* パディングはそのまま */
+  background-color: #0056b3;
   color: white;
   font-size: 1.2rem;
   border-radius: 5px;
@@ -647,10 +649,8 @@ a.btn h3 {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.start-management-btn:hover {
-  background-color: #1a8ab7;
+  display: block; /* displayをblockにすることで横幅が効くようにする */
+  margin: 0 auto; /* 中央揃え */
 }
 
 .start-management-btn:hover {
@@ -1084,6 +1084,7 @@ button.start-management-btn:hover {
   display: block; /* ブロック要素にして中央揃えを確実にする */
   max-width: 100%; /* 画像の最大幅を100%にして親要素に合わせる */
   height: auto; /* 高さを自動調整 */
+  margin-bottom: 25px; /* 画像の下に20pxの間隔をあける */
 }
 
 .course-image {
@@ -1455,4 +1456,534 @@ button.start-dx-btn:hover {
 
 .download-btn:hover {
   background-color: #1c7ed6;
+}
+
+/* コンテナ */
+.container {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 40px auto; /* 余白を増やす */
+  width: 70%;
+}
+
+.container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* リストの箇条書き記号を消す */
+.container ul {
+  list-style-type: none; /* ・を消す */
+  padding-left: 0; /* 左の余白をリセット */
+}
+
+/* ボタンデザイン */
+.container .btn {
+  display: block;
+  width: 60%;
+  padding: 15px; /* 適切なボタンサイズ */
+  margin: 15px auto;
+  border: none;
+  background: #3498db;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none; /* リンクの下線を消す */
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.container .btn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* コンテナ設定 */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;  /* 上下の余白を減らす */
+  margin-top: 150px;  /* 上の余白を削除 */
+
+}
+
+/* 動画プレーヤーの設定 */
+.video-player {
+  width: 80%;
+  max-width: 800px;
+  margin-top: -60px; /* 上部の余白を縮める */
+  margin-bottom: 10px; /* 動画とコンテンツの間隔を縮める */
+  height: 500px;  /* 縦幅を固定 */
+  position: relative;
+  /* padding-bottom: 50%; 16:9 Aspect Ratio */
+  /* background: #000; */
+}
+
+.video-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 学習内容の設定 */
+.video-content {
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0;  /* 上の余白を削除 */
+}
+
+.video-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.video-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* ボタンデザイン */
+
+/* 各問間のスペースを開ける */
+.exercises {
+  margin-bottom: 30px;  /* 20pxの間隔を追加 */
+}
+
+.exercises-btn {
+  display: block;
+  width: 60%;
+  padding: 15px; /* 適切なボタンサイズ */
+  margin: 15px auto;
+  border: none;
+  background: #3498db;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none; /* リンクの下線を消す */
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+   margin-top: 5%; /* ボタンを下部に寄せる */
+}
+
+.exercises-btn:hover {
+  background:rgb(47, 52, 56);
+  transform: scale(1.05);
+}
+
+/* 全体のスタイル */
+.exercises-content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;  /* 上の余白を削除 */
+}
+
+.exercises-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.exercises-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.exercises-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* 選択肢のスタイル */
+.exercises-options {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.exercises-options li {
+  margin-bottom: 20px; /* 各選択肢の間隔 */
+  display: flex;
+  align-items: center;  /* ラジオボタンとラベルを縦並びで中央揃え */
+}
+
+.exercises-options input[type="radio"] {
+  width: 30px;  /*幅を30pxに */
+  height: 15px; /* 高さを30pxに */
+   margin-right: 15px; ラジオボタンとラベルの間隔 
+  vertical-align: middle; ラジオボタンとテキストが揃うように調整  
+} 
+
+.exercises-options label {
+  font-size: 18px;
+  vertical-align: middle; /* テキストとラジオボタンを揃える */
+}
+
+/* 横並びにするための設定 */
+.exercises-options li {
+  margin-right: 20px; /* 選択肢間の間隔 */
+  margin-bottom: 10px; /* 行間隔 */
+}
+
+.next-btn {
+  padding: 10px 20px;
+  display: block;
+   width: 25%; 
+  /* padding: 15px; 適切なボタンサイズ */
+  margin: 15px auto; /* 左右の自動マージンで中央配置（縦方向のスペース） */
+  margin-top: 5%; /* ボタンを下部に寄せる */
+  border: none;
+  background: #3498db;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none; /* リンクの下線を消す */
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+    align-items: radio; /* ボタン内のテキストを中央に揃える */
+  margin-left: 72%; /* 親要素内で右寄せにする */
+}
+
+.next-btn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* submit-container内のボタンを横並びにする */
+.submit-container {
+  display: flex;
+  justify-content: flex-start; /* ボタンを横並びにし、左寄せ */
+  align-items: center; /* ボタンを縦方向で中央揃え */
+  margin-top: 30px; /* ボタン間の間隔 */
+  gap: 20px; /* ボタン間のスペース */
+}
+
+/* 戻るボタンのスタイル */
+.back-btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center; /* ボタン内のテキストを中央に揃える */
+  margin-right: auto; /* 親要素内で左寄せにする */
+  border-radius: 10px;
+}
+
+.back-btn:hover {
+  background-color: #c0392b;
+}
+
+/*結果ボタンのスタイル */
+.result-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: radio; /* ボタン内のテキストを中央に揃える */
+  margin-left: auto; /* 親要素内で右寄せにする */
+
+}
+
+.result-btn:hover {
+  background-color: #2980b9;
+  
+}
+
+/* 全体のスタイル */
+.result-content {
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* .exercises-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.exercises-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.exercises-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+} */
+
+.result-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.result-message {
+  font-size: 20px;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.result-details {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.result-details h2 {
+  font-size: 28px;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.result-details p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* ボタンのスタイル */
+.next-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.home-btn,
+.retry-btn ,
+.test-btn{
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.home-btn:hover,
+.retry-btn:hover,
+.test-btn:hover
+{
+  background-color: #2980b9;
+}
+
+/* 各問間のスペースを開ける */
+.test {
+  margin-bottom: 30px;  /* 20pxの間隔を追加 */
+}
+
+.test-content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;  /* 上の余白を削除 */
+}
+
+/* テスト問題セクション */
+.test-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.test-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.test-container h2, {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.test-container h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.test-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* 問題の選択肢リスト */
+.test-options {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.test-options li {
+  margin-bottom: 20px; /* 各選択肢の間隔 */
+  display: flex;
+  align-items: center;  /* ラジオボタンとラベルを縦並びで中央揃え */
+}
+
+.test-options input[type="radio"] {
+  width: 30px;  /*幅を30pxに */
+  height: 15px; /* 高さを30pxに */
+   margin-right: 15px; /*ラジオボタンとラベルの間隔 */
+  vertical-align: middle; /*ラジオボタンとテキストが揃うように調整  */
+}
+
+.test-options label {
+  font-size: 18px;
+  vertical-align: middle; /* テキストとラジオボタンを揃える */
+}
+
+
+/* 次へボタン
+.test-back-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* ボタンを右寄せにする親要素 */
+/* .test-btn-container {
+  display: flex;
+  justify-content: flex-end; /* 右端に配置 */
+  /* align-items: center; 垂直方向で中央揃え
+  margin-right: 20px; 微調整（右端からの余白） */
+/* }   */
+
+/* 回答送信ボタン */
+.send-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  height: 50px; /* 高さを統一 */
+  display: inline-flex; /* Flexboxで中央揃え */
+  align-items: center; /* 垂直方向で中央揃え */
+  justify-content: center; /* 水平方向で中央揃え */
+}
+
+.send-btn:hover {
+  background-color: #2980b9;
+}
+
+/* 次へボタン（戻るボタン） */
+.test-back-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex; /* Flexboxで中央揃え */
+  align-items: center; /* 垂直方向で中央揃え */
+  justify-content: center; /* 水平方向で中央揃え */
+  transition: background-color 0.3s ease;
+  height: 50px; /* 高さを統一 */
+}
+
+/* ボタンを左と右に配置 */
+.test-btn-container {
+  display: flex;
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center; /* 垂直方向で中央揃え */
+  margin-top: 20px; /* 上の余白を調整 */
+  margin-right: 5px; /* 右端からの余白 */
+}
+
+/* 左側に戻るボタン、右側に送信ボタン */
+.test-btn-container .test-back-btn {
+  margin-right: 20px; /* 右側の余白 */
+}
+
+/* ラジオボタンのリスト項目の「・」を消す */
+.test-options {
+  list-style-type: none; /* 「・」を消す */
+  padding: 0;
+}
+
+/* 完了ページのスタイル */
+.completion-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.completion-container h1 {
+  font-size: 2em;
+  color: #2ecc71;
+  margin-bottom: 20px;
+}
+
+.completion-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.completion-buttons {
+  margin-top: 30px;
+}
+
+.completion-buttons a {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.completion-buttons a:hover {
+  background-color: #2980b9;
 }

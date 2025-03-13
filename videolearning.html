@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>マネジメントの基本</title>
+    <title>動画学習</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -16,15 +16,14 @@
           <ul>
             <li><a href="index.html">トップ</a></li>
             <li><a href="course.html">コース一覧</a></li>
-            <li><a href="instructor.html">講師紹介</a></li>
             <li class="dropdown">
               <a href="Material-download.html">教材ダウンロード</a>
             </li>
             <li class="dropdown">
-              <a href="#">お問い合わせ・FAQ</a>
+              <a href="inquiry.html">お問い合わせ・FAQ</a>
               <ul class="dropdown-content">
-                <li><a href="inquiry.html">お問い合わせ</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">FAQ</a></li>
               </ul>
             </li>
           </ul>
@@ -34,43 +33,28 @@
 
     <!-- メインコンテンツ -->
     <main>
-      <section class="course-management">
-        <h2>マネジメントの基本 コース概要</h2>
-
-        <h3>テーマ</h3>
-        <ul>
-          <img src="img/management-theme.png" class="theme" />
-        </ul>
-        <br />
-        <h3>対象者</h3>
-        <ul>
-          <img src="img/management-target.png" class="target" />
-        </ul>
-
-        <div class="management-description">
-          <p>
-            新任管理者、既任管理者、および管理者候補の方を対象とした、マネジメントの
-            基本を習得するeラーニングコースです。業務と人、管理と改革といった側面から、
-            マネジャーの果たすべき役割を明確にしていきます。実際に想定されるマネジメント
-            場面をアニメーションで学習し、実務にスムーズに活用していただけます。
-            随所に盛り込んだセルフチェックで、自己を客観的に確認しながら理解を深めます。
-          </p>
-          <img src="img/managementdetail.png" class="managementdetail" />
+      <section class="video-container">
+        <!-- 動画プレーヤー -->
+        <div class="video-player">
+          <iframe
+            src="https://www.youtube.com/embed/動画ID"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
 
-        <h3 class="managementcurriculum">
-          マネジメントの基本コースのカリキュラム
-        </h3>
-        <img
-          src="img/management-curriculum.png"
-          class="management-curriculumpng"
-        />
-
-        <img src="img/management-purpose.png" class="purpose" />
-        <img src="img/management-review.png" class="management-review" />
-
-        <a href="index2.html" class="start-management-btn">コースを始める</a>
+        <!-- 学習内容 -->
+        <div class="video-content">
+          <h2>マネジメントの基本</h2>
+          <p>
+            ※動画は再生できません。<br />
+            内容・説明：
+          </p>
+        </div>
       </section>
+
+      <a href="exercises1.html" class="exercises-btn">2. 練習問題題へ進む</a>
     </main>
 
     <!-- フッター -->
@@ -84,6 +68,7 @@
             <li><a href="#">お問い合わせ</a></li>
           </ul>
         </div>
+
         <div class="footer-section">
           <h4>サポート</h4>
           <ul>
@@ -92,6 +77,7 @@
             <li><a href="#">プライバシーポリシー</a></li>
           </ul>
         </div>
+
         <div class="footer-section">
           <h4>ソーシャルメディア</h4>
           <ul>

@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>教材ダウンロード</title>
+    <title>学習メニュー</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- ヘッダー -->
     <header>
@@ -17,10 +18,13 @@
             <li><a href="course.html">コース一覧</a></li>
             <li><a href="instructor.html">講師紹介</a></li>
             <li class="dropdown">
+              <a href="Material-download.html">教材ダウンロード</a>
+            </li>
+            <li class="dropdown">
               <a href="#">お問い合わせ・FAQ</a>
               <ul class="dropdown-content">
                 <li><a href="inquiry.html">お問い合わせ</a></li>
-                <li><a href=" FAQ.html">FAQ</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
               </ul>
             </li>
           </ul>
@@ -30,38 +34,13 @@
 
     <!-- メインコンテンツ -->
     <main>
-      <section class="download-section">
-        <h2>教材ダウンロード</h2>
-        <p>
-          こちらから各種コースの教材をダウンロードできます。<br />必要な教材を選んでダウンロードしてください。
-        </p>
-
-        <div class="download-list">
-          <div class="download-item">
-            <h3>マネジメントコース教材</h3>
-            <img src="img/management.png" class="management" />
-            <p>
-              効果的なマネジメントの基本を学べる教材です。リーダーシップ、チームビルディング、戦略的思考など、組織を牽引するために必要な知識とスキルを身につけます。
-            </p>
-            <a href="" class="download-btn">ダウンロード</a>
-          </div>
-          <div class="download-item">
-            <h3>DX人材育成コース教材</h3>
-            <img src="img/DX.png" class="DX" />
-            <p>
-              DXの基本から実践までを学べる教材です。DXを活用した業務改善や新しいビジネスモデルの構築に必要なスキルを身につけ、未来のデジタル時代に対応できる人材を育成します。
-            </p>
-            <a href="" class="download-btn">ダウンロード</a>
-          </div>
-          <div class="download-item">
-            <h3>技能・技術コース教材</h3>
-            <img src="img/technology.png" class="technology" />
-            <p>
-              技能・技術力の向上を目指す方、スキルアップを目指す方に最適な教材です。実践的な技能や最新の技術について学び、現場で活かせる知識を深めることができます。
-            </p>
-            <a href="" class="download-btn">ダウンロード</a>
-          </div>
-        </div>
+      <section class="container">
+        <h2>学習メニュー</h2>
+        <ul>
+          <li><a href="videolearning.html" class="btn">1. 動画学習</a></li>
+          <li><a href="exercises1.html" class="btn">2. 練習問題</a></li>
+          <li><a href="test1.html" class="btn">3. テスト</a></li>
+        </ul>
       </section>
     </main>
 
