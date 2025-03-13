@@ -1460,11 +1460,12 @@ button.start-dx-btn:hover {
 
 /* コンテナ */
 .container {
+
   background: white;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin: 40px auto; /* 余白を増やす */
+  margin: 140px auto; /* 余白を増やす */
   width: 70%;
 }
 
@@ -1915,6 +1916,33 @@ button.start-dx-btn:hover {
   background-color: #2980b9;
 }
 
+/* 次へボタンのコンテナ */
+.test-next-btn-container {
+  display: flex; /* Flexboxを使用 */
+  justify-content: flex-end; /* 右端に配置 */
+  width: 100%; /* コンテナの幅を100%にして全幅を使う */
+  margin-top: 20px; /* 上部に余白を追加 */
+}
+
+/* 次へボタン */
+.test-next-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.test-next-btn:hover {
+  background-color: #2980b9;
+}
+
+
 /* 次へボタン（戻るボタン） */
 .test-back-btn {
   background-color: #3498db;
@@ -1961,15 +1989,17 @@ button.start-dx-btn:hover {
   font-size: 2em;
   color: #2ecc71;
   margin-bottom: 20px;
+  margin-top: 150px; /* ボタンとテキストの間隔を広げる */
 }
+
 
 .completion-container p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* pタグの下に余白を追加 */
 }
 
 .completion-buttons {
-  margin-top: 30px;
+  margin-top: 80px; /* ボタンとテキストの間隔を広げる */
 }
 
 .completion-buttons a {
