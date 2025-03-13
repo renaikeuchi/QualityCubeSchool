@@ -667,6 +667,7 @@ nav ul,
 }
 .courseslist {
   margin-bottom: 40px; /* セクションとフッターの間にスペース */
+  margin: 185px auto;
 }
 
 .contact-form {
