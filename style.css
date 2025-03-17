@@ -928,21 +928,39 @@ textarea {
   font-weight: bold; /* 太字に */
 }
 
-/* テーマと画像を横並びにする */
+/* h3 と画像の間隔を狭める */
 .course-management h3 {
   font-size: 22px;
   color: #0072bc;
   text-align: center; /* テキストを中央揃え */
-  margin-bottom: 30px; /* h3の下に間隔を追加 */
-  margin-right: 20px; /* テキストと画像の間に余白を追加 */
+  margin-bottom: 10px; /* h3の下の余白を減らして間隔を狭める */
+  margin-top: 10px; /* h3の上の余白も少し減らす */
 }
 
+/* ul リストの調整 */
 .course-management ul {
-  list-style: none; /* リストのデフォルトスタイルを解除 */
-  padding: 0; /* 内側の余白をリセット */
-  display: flex; /* フレックスボックスを使用 */
-  justify-content: center; /* 横方向に中央揃え */
-  align-items: center; /* 垂直方向に中央揃え */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px; /* ul の下の余白を減らして画像とテキストの間隔を狭める */
+}
+
+/* 画像の調整 */
+.course-management .bronze {
+  max-width: 10%; /* 画像サイズを調整 */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 画像を中央揃え */
+}
+
+/* 画像の調整 */
+. {
+  max-width: 10%; /* 画像サイズを調整 */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 画像を中央揃え */
 }
 
 .course-management .theme {
@@ -956,6 +974,19 @@ textarea {
   margin-bottom: 30px; /* 画像の下に間隔を追加 */
   margin: 0 auto; /* 画像に中央揃えを指定 */
   display: block; /* ブロック要素にして中央揃えを確実にする */
+}
+
+/* 画像サイズ調整 */
+.bronze {
+  
+  max-width: 10%;  /* 画像の最大幅を100%にして、親要素に収まるようにする */
+  height: auto; /* 高さは自動で調整 */
+}
+
+/* 見出し文字サイズ調整 */
+h2 {
+  font-size: 2em; /* h2の文字サイズを調整 */
+  margin-bottom: 10px; /* h2の下にマージンを追加 */
 }
 
 /* 横並びにするためのスタイル */
@@ -1075,21 +1106,39 @@ button.start-management-btn:hover {
   font-weight: bold; /* 太字に */
 }
 
-/* テーマと画像を横並びにする */
+/* h3 と画像の間隔を狭める */
 .course-skill h3 {
   font-size: 22px;
   color: #0072bc;
   text-align: center; /* テキストを中央揃え */
-  margin-bottom: 30px; /* h3の下に間隔を追加 */
-  margin-right: 20px; /* テキストと画像の間に余白を追加 */
+  margin-bottom: 10px; /* h3の下の余白を減らして間隔を狭める */
+  margin-top: 10px; /* h3の上の余白も少し減らす */
 }
 
+/* ul リストの調整 */
 .course-skill ul {
-  list-style: none; /* リストのデフォルトスタイルを解除 */
-  padding: 0; /* 内側の余白をリセット */
-  display: flex; /* フレックスボックスを使用 */
-  justify-content: center; /* 横方向に中央揃え */
-  align-items: center; /* 垂直方向に中央揃え */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px; /* ul の下の余白を減らして画像とテキストの間隔を狭める */
+}
+
+/* 画像の調整 */
+.course-skill .gold {
+  max-width: 10%; /* 画像サイズを調整 */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 画像を中央揃え */
+}
+
+/* 画像の調整 */
+. {
+  max-width: 10%; /* 画像サイズを調整 */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 画像を中央揃え */
 }
 
 .course-skill .theme {
@@ -1098,11 +1147,19 @@ button.start-management-btn:hover {
 }
 
 /* 画像とテキスト間のスペース調整 */
-.course-skill .target {;
+.course-skill .target {
+  display: inline-block;
   margin-bottom: 30px; /* 画像の下に間隔を追加 */
   margin: 0 auto; /* 画像に中央揃えを指定 */
   display: block; /* ブロック要素にして中央揃えを確実にする */
 }
+
+/* 画像サイズ調整 */
+.gold {
+  max-width: 10%; /* 画像の最大幅を100%にして、親要素に収まるようにする */
+  height: auto; /* 高さは自動で調整 */
+}
+
 
 /* 横並びにするためのスタイル */
 .skill-description {
@@ -1226,22 +1283,63 @@ button.start-skill-btn:hover {
   font-weight: bold; /* 太字に */
 }
 
-/* テーマと画像を横並びにする */
+/* h3 と画像の間隔を狭める */
 .course-dx h3 {
   font-size: 22px;
   color: #0072bc;
-  text-align: center; /* テキストを中央揃え */
-  margin-bottom: 30px; /* h3の下に間隔を追加 */
-  margin-right: 20px; /* テキストと画像の間に余白を追加 */
+  text-align: center;
+  margin: 0; /* 上下の余白をリセット */
+  padding: 0 10px; /* 左右に少し余白を追加 */
+  margin-bottom: 10px;
+  margin-top: 0%;
+
 }
 
-.course-dx ul {
-  list-style: none; /* リストのデフォルトスタイルを解除 */
-  padding: 0; /* 内側の余白をリセット */
-  display: flex; /* フレックスボックスを使用 */
+
+/* 画像とテキストを横並びに */
+.course-dx .flex-container {
+  display: flex; /* 横並びにする */
   justify-content: center; /* 横方向に中央揃え */
-  align-items: center; /* 垂直方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
+  gap: 15px; /* 画像とテキストの間隔 */
+  margin-bottom: 20px; /* 下の余白 */
 }
+
+
+/* 各画像とテキストを横並びに調整 */
+.course-dx .flex-container > div {
+  display: flex;
+  flex-direction: column; /* 画像の下にテキストを配置 */
+  align-items: center; /* 水平中央揃え */
+}
+
+
+/* ulリストを横並びにする */
+.course-dx ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* 横並びにする */
+  justify-content: center; /* 画像を中央に配置 */
+  align-items: center; /* 画像の縦位置を中央に */
+  gap: 20px; /* 画像間の間隔 */
+  margin-bottom: 10px; /* ulの下の余白 */
+}
+
+/* 画像のサイズ調整 */
+.course-dx .bronze{
+  max-width: 32%; /* 画像の最大幅を調整 */
+  height: auto;
+  display: block;
+  margin: 0; /* 画像のマージンをリセット */
+}
+
+.course-dx .silver {
+  max-width: 37%; /* 画像の最大幅を調整 */
+  height: auto;
+  display: block;
+  margin: 0; /* 画像のマージンをリセット */
+}
+
 
 .course-dx .theme {
   display: inline-block; /*画像を横並びにする */
