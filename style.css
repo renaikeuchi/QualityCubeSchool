@@ -1135,7 +1135,7 @@ button.start-management-btn:hover {
 
 /* 画像の調整 */
 . {
-  max-width: 10%; /* 画像サイズを調整 */
+  max-width: 5%; /* 画像サイズを調整 */
   height: auto;
   display: block;
   margin: 0 auto; /* 画像を中央揃え */
