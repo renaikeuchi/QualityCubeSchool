@@ -207,7 +207,7 @@ nav ul li a {
   font-weight: bold;
   position: fixed; /* 固定位置 */
   right: 0px; /* 右端に配置 */
-  top: 48%; /* 垂直中央 */
+  top: 55%; /* 垂直中央 */
   transform: translateY(-50%); /* ボタンを完全に中央に */
   width: 50px; /* 横幅 */
   height: 250px; /* 縦幅 */
@@ -2026,7 +2026,7 @@ button.start-dx-btn:hover {
   flex-direction: column; /* ボタンを縦に並べる */
   align-items: center; /* 中央揃え */
   gap: 20px; /* ボタン間の間隔 */
-  margin-top: 0%; */
+  margin-top: 3%; 
 }
 
 .members-create {
