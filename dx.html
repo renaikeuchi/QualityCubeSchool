@@ -9,26 +9,32 @@
 
   <body>
     <!-- ヘッダー -->
+   <body>
+    <!-- ヘッダー -->
     <header>
-      <div class="header-container">
-        <div class="logo">QualityCubeSchool (仮称)</div>
-        <nav>
-          <ul>
-            <li><a href="index.html">トップ</a></li>
-            <li><a href="course.html">コース一覧</a></li>
-
-            <li><a href="Material-download.html">資料ダウンロード</a></li>
-            <li class="dropdown">
-              <a href="#">お問い合わせ・FAQ</a>
-              <ul class="dropdown-content">
-                <li><a href="inquiry.html">お問い合わせ</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <div class="header-container">
+            <div class="logo">QualityCubeSchool (仮称)</div>
+            <div class="header-button"> <!-- header-button の位置を修正 -->
+                <nav>
+                                 <ul>
+                        <li><a href="#" class="example create">無料会員登録はこちら</a></li>
+                        <li><a href="inquiry.html" class="example inquiry">お問い合わせ・ご相談</a></li>
+                        <li><a href="#" class="example login">会員ページログイン</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
+    <nav>
+      <ul>
+        <li><a href="">QualityCubeSchoolとは</a></li>
+        <li><a href="course.html">コース一覧</a></li>
+        <li><a href="Material-download.html">資料ダウンロード</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+  </nav>
+    
 
     <!-- メインコンテンツ -->
     <main>
@@ -84,32 +90,43 @@
     <!-- フッター -->
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-section">
-          <h4>会社情報</h4>
+        <div class="footer-logo">QualityCubeSchool</div>
+
+        <div class="footer-links">
           <ul>
-            <li><a href="https://qualitycube.jp/">運営会社</a></li>
-            <li><a href="#">会社概要</a></li>
-            <li><a href="#">採用情報</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#" class="example2 create">無料会員登録</a></li>
+            <li><a href="#" class="example2 download">資料ダウンロード</a></li>
+            <li>
+              <a href="inquiry.html" class="example2 inquiry"
+                >お問い合わせ・ご相談</a
+              >
+            </li>
+            <li><a href="#" class="link privacy">プライバシーポリシー</a></li>
+            <li>
+              <a href="" class="link law">特定商取引に関する法律に基づく表記</a>
+            </li>
+            <li><a href="#" class="link conditions">利用規約</a></li>
+            <li><a href="#" class="link company">運営会社</a></li>
           </ul>
         </div>
-        <div class="footer-section">
-          <h4>サポート</h4>
+
+        <div class="footer-section" style="position: relative">
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">利用規約</a></li>
-            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">▶　QualityCubeSchoolとは</a></li>
+            <li><a href="#">▶　QualityCubeSchoolの特徴</a></li>
+            <li><a href="#">▶　コース詳細</a></li>
+            <li><a href="#">▶　ニュース</a></li>
+            <li><a href="#">▶　よくある質問(FAQ)</a></li>
           </ul>
-        </div>
-        <div class="footer-section">
-          <h4>ソーシャルメディア</h4>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">FaceBook</a></li>
-          </ul>
+
+          <div href="index.html" class="top_btn">
+            <span class="top_text">Page</span>
+            <span class="top_text">Top</span>
+          </div>
         </div>
       </div>
+
+      <!-- コピーライト部分 -->
       <p class="copyright">© 2025 Example Inc. All Rights Reserved.</p>
     </footer>
   </body>
