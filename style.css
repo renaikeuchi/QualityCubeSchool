@@ -2026,7 +2026,7 @@ button.start-dx-btn:hover {
   flex-direction: column; /* ボタンを縦に並べる */
   align-items: center; /* 中央揃え */
   gap: 20px; /* ボタン間の間隔 */
-  margin-top: 3%; 
+  margin-top: -3%; 
 }
 
 .members-create {
