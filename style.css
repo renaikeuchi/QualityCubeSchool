@@ -202,6 +202,62 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
+/* フローティングアクションボタン */
+.fab {
+  font-weight: bold;
+  position: fixed; /* 固定位置 */
+  right: 0px; /* 右端に配置 */
+  top: 48%; /* 垂直中央 */
+  transform: translateY(-50%); /* ボタンを完全に中央に */
+  width: 50px; /* 横幅 */
+  height: 250px; /* 縦幅 */
+  background-color: #ffff00; /* 背景色 */
+  color: #000; /* テキスト色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* シャドウ効果 */
+  text-decoration: none; /* アンダーラインを消す */
+  transition: background-color 0.3s ease;
+  writing-mode: vertical-rl; /* テキストを縦書き */
+  z-index: 9999; /* 他の要素より前面に表示 */
+}
+
+/* ホバー時の効果 */
+.fab:hover {
+  background-color: #2980b9; /* ホバー時の色 */
+}
+
+/* もう1つのフローティングアクションボタン */
+.fab2 {
+  font-weight: bold;
+  position: fixed; /* 固定位置 */
+  right: 0px; /* 右端に配置 */
+  top: 80%; /* 垂直中央 */
+  transform: translateY(-50%); /* ボタンを完全に中央に */
+  width: 50px; /* 横幅 */
+  height: 250px; /* 縦幅 */
+  background-color: #ff3366; /* 背景色 */
+  color: #fff; /* テキスト色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* シャドウ効果 */
+  text-decoration: none; /* アンダーラインを消す */
+  transition: background-color 0.3s ease;
+  writing-mode: vertical-rl; /* テキストを縦書き */
+  z-index: 9999; /* 他の要素より前面に表示 */
+}
+
+/* ホバー時の効果 */
+.fab2:hover {
+  background-color: #2980b9; /* ホバー時の色 */
+}
+
 
 /* お知らせ */
 .news-list {
@@ -1970,7 +2026,7 @@ button.start-dx-btn:hover {
   flex-direction: column; /* ボタンを縦に並べる */
   align-items: center; /* 中央揃え */
   gap: 20px; /* ボタン間の間隔 */
-  margin-top: -10%; */
+  margin-top: 0%; */
 }
 
 .members-create {
