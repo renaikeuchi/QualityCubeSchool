@@ -452,6 +452,84 @@ a.btn:hover {
   background: #27acd9;
 }
 
+/* .problem セクション内の親要素に position: relative を追加 */
+.problem {
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #191970;
+  position: relative; /* これを追加 */
+  background-color: #ffffff;
+  height: 550%;
+}
+
+/* 画像の位置調整 */
+.speech-bubble-img {
+  position: absolute;
+  top: 2.5%; /* 上からの位置調整 */
+  width:200px;
+  left: 50%; /* 横方向中央 */
+  transform: translateX(-50%); /* 中央寄せ */
+}
+
+.woman-img {
+  position: relative;
+  width: 250px; /* 画像サイズを調整 (必要に応じて変更) */
+  top: 2.8%;
+  left: 13%; /* 横方向中央 */
+}
+
+.speech-bubble-img2 {
+  position: absolute;
+  top: 2.5%; /* 上からの位置調整 */
+  width:200px;
+  left: 28%; /* 横方向中央 */
+  transform: translateX(-50%); /* 中央寄せ */
+}
+
+.uncle-img {
+  position: relative;
+  width: 200px; /* 画像サイズを調整 (必要に応じて変更) */
+  top: 3%;
+  right: 20%; /* 横方向中央 */
+}
+
+.speech-bubble-img3 {
+  position: absolute;
+  top: 2.5%; /* 上からの位置調整 */
+  width:200px;
+  left: 73%; /* 横方向中央 */
+  transform: translateX(-50%); /* 中央寄せ */
+}
+
+.man-img {
+  position: relative;
+  width: 190px; /* 画像サイズを調整 (必要に応じて変更) */
+  top: 3.2%;
+  left: 15%; /* 横方向中央 */
+}
+
+.under-img {
+  position: relative;
+  width: 100px; /* 画像サイズを調整 (必要に応じて変更) */
+  top: 5.5%;
+  right:320px;
+}
+
+.qcs-description h2{
+  margin-top: 15%;
+}
+
+.problem h2 {
+  font-size: 2.5rem;  /* 少し大きめに */
+  margin-bottom: 30px;
+  color: #191970;
+}
+
+
+
+
 .instructor-card {
   display: flex;
   align-items: center;
